@@ -131,3 +131,17 @@ text-decoration:none;
 font-weight:bold;
 
 }
+
+.exp img{
+width: 220px;
+height: auto;
+border-radius: 12px;
+object-fit: cover;
+}
+
+.exp{
+display: flex;
+gap: 20px;
+align-items: center;
+margin-bottom: 40px;
+}
