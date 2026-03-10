@@ -22,7 +22,6 @@ renderer.setSize(window.innerWidth, window.innerHeight)
 const loader = new THREE.GLTFLoader()
 
 let whale
-let fishes=[]
 let jellys=[]
 
 
@@ -37,29 +36,6 @@ scene.add(whale)
 
 })
 
-
-// 🐟 many fish
-for(let i=0;i<20;i++){
-
-loader.load('fish.glb', function(gltf){
-
-const fish = gltf.scene
-
-fish.scale.set(1.2,1.2,1.2)
-
-fish.position.set(
-Math.random()*80-40,
-Math.random()*20-10,
-Math.random()*-40
-)
-
-scene.add(fish)
-
-fishes.push(fish)
-
-})
-
-}
 
 
 // 🪼 jellyfish
@@ -164,18 +140,6 @@ if(whale.position.x > 40){
 whale.position.x = -40
 }
 }
-
-
-// fish swim
-fishes.forEach(fish=>{
-
-fish.position.x += 0.1
-
-if(fish.position.x > 40){
-fish.position.x = -40
-}
-
-})
 
 
 // jellyfish floating
