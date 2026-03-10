@@ -26,6 +26,14 @@ padding:120px 20px;
 
 }
 
+.timeline h4{
+color:white;
+}
+
+.content p{
+color:#c9d6e2;
+}
+
 .avatar{
 
 width:180px;
@@ -263,4 +271,18 @@ background:#e4e9f7;
 padding:8px 14px;
 border-radius:8px;
 font-size:14px;
+}
+
+.timeline::before{
+background:rgba(255,255,255,0.6);
+}
+
+.dot{
+background:white;
+box-shadow:0 0 8px rgba(255,255,255,0.7);
+}
+
+.date{
+color:white;
+font-weight:600;
 }
