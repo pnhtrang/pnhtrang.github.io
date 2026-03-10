@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Mina:wght@400;700&display=swap');
+
 body{
 
 margin:0;
 font-family:Segoe UI;
 color:white;
-background:#0b3c6d;
+background:#20405E;
 overflow-x:hidden;
 padding-top:80px;
   
@@ -36,7 +38,7 @@ box-shadow:0 10px 40px rgba(0,0,0,0.5);
 h1{
 
 font-size:48px;
-color:#FFD66B;
+color:#FFE8CF;
 
 }
 
@@ -44,7 +46,7 @@ h2{
 
 text-align:center;
 margin-top:50px;
-color:#FFD66B;
+color:#FFFFFF;
 
 }
 
@@ -157,8 +159,8 @@ width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 60px;
-background:#5c3a2e;
+padding:10px 50px;
+background:#A6C0DF;
 z-index:10;
 }
 
