@@ -29,7 +29,7 @@ let jellys=[]
 loader.load('cartoon_whale.glb', function(gltf){
 
 whale = gltf.scene
-whale.scale.set(5,5,5)
+whale.scale.set(10,10,10)
 whale.position.set(-40,0,-20)
 
 scene.add(whale)
@@ -134,11 +134,15 @@ requestAnimationFrame(animate)
 
 // whale swim
 if(whale){
-whale.position.x += 0.05
 
-if(whale.position.x > 40){
-whale.position.x = -40
-}
+const t = Date.now() * 0.0003
+
+whale.position.x = Math.sin(t) * 30
+whale.position.z = Math.cos(t) * 20
+whale.position.y = Math.sin(t*2) * 5
+
+whale.rotation.y = -t
+
 }
 
 
