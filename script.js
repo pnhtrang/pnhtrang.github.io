@@ -27,7 +27,7 @@ let jellys=[]
 
 
 // 🐋 whale
-loader.load(cartoon_whale.glb', function(gltf){
+loader.load('cartoon_whale.glb', function(gltf){
 
 whale = gltf.scene
 whale.scale.set(5,5,5)
@@ -41,7 +41,7 @@ scene.add(whale)
 // 🐟 many fish
 for(let i=0;i<20;i++){
 
-loader.load(fish.glb', function(gltf){
+loader.load('fish.glb', function(gltf){
 
 const fish = gltf.scene
 
@@ -65,7 +65,7 @@ fishes.push(fish)
 // 🪼 jellyfish
 for(let i=0;i<6;i++){
 
-loader.load(jellyfish.glb', function(gltf){
+loader.load('jellyfish.glb', function(gltf){
 
 const jelly = gltf.scene
 
@@ -149,21 +149,6 @@ scene.add(bubble)
 bubbles.push(bubble)
 
 }
-
-
-// 🐋 Whale abstract shape
-
-const whaleGeometry = new THREE.TorusKnotGeometry(8,2,200,32)
-
-const whaleMaterial = new THREE.MeshStandardMaterial({
-color:0xFFD66B,
-wireframe:true
-})
-
-const whale = new THREE.Mesh(whaleGeometry,whaleMaterial)
-
-scene.add(whale)
-
 
 // Animation
 
