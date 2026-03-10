@@ -1,7 +1,7 @@
 // Scene
 const scene = new THREE.Scene()
 
-scene.background = new THREE.Color(0x0b3c6d)
+scene.background = new THREE.Color(0x20405E)
 
 // Camera
 const camera = new THREE.PerspectiveCamera(
