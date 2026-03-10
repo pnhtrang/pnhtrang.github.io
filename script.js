@@ -135,14 +135,14 @@ requestAnimationFrame(animate)
 // whale swim
 if(whale){
 
-const t = Date.now() * 0.0003
+const t = Date.now() * 0.00015   // chậm lại
 
 whale.position.x = Math.sin(t) * 30
 whale.position.z = Math.cos(t) * 20
 whale.position.y = Math.sin(t*2) * 5
 
 whale.rotation.y = -t
-whale.rotation.z = Math.sin(t*3)*0.1
+whale.rotation.z = Math.sin(t*2) * 0.5   // lắc mạnh hơn
 
 }
 
