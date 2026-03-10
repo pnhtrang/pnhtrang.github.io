@@ -26,6 +26,13 @@ padding:120px 20px;
 
 }
 
+.projects img{
+width:220px;
+height:auto;
+border-radius:12px;
+object-fit:cover;
+}
+
 .timeline h4{
 color:white;
 }
