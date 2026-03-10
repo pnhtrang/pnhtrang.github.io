@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Mina:wght@400;700&display=swap');
 
 body{
-
 margin:0;
-font-family:Segoe UI;
+font-family:'Mina', sans-serif;
+font-weight:700;
 color:white;
 background:#20405E;
 overflow-x:hidden;
 padding-top:80px;
-  
 }
 
 canvas{
@@ -36,25 +35,22 @@ box-shadow:0 10px 40px rgba(0,0,0,0.5);
 }
 
 h1{
-
+font-family:'Fredoka One', cursive;
 font-size:48px;
 color:#FFE8CF;
-
 }
 
 h2{
-
+font-family:'Fredoka One', cursive;
 text-align:center;
 margin-top:50px;
 color:#FFFFFF;
-
 }
 
 .intro{
-
+font-family:'Fredoka One', cursive;
 max-width:700px;
 margin:auto;
-
 }
 
 section{
@@ -165,9 +161,9 @@ z-index:10;
 }
 
 .logo{
+font-family:'Fredoka One', cursive;
 color:white;
 font-size:28px;
-font-weight:bold;
 letter-spacing:2px;
 }
 
