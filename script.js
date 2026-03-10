@@ -19,6 +19,71 @@ antialias:true
 
 renderer.setPixelRatio(window.devicePixelRatio)
 renderer.setSize(window.innerWidth, window.innerHeight)
+const loader = new THREE.GLTFLoader()
+
+let whale
+let fishes=[]
+let jellys=[]
+
+
+// 🐋 whale
+loader.load('assets/whale.glb', function(gltf){
+
+whale = gltf.scene
+whale.scale.set(5,5,5)
+whale.position.set(-40,0,-20)
+
+scene.add(whale)
+
+})
+
+
+// 🐟 many fish
+for(let i=0;i<20;i++){
+
+loader.load('assets/fish.glb', function(gltf){
+
+const fish = gltf.scene
+
+fish.scale.set(1.2,1.2,1.2)
+
+fish.position.set(
+Math.random()*80-40,
+Math.random()*20-10,
+Math.random()*-40
+)
+
+scene.add(fish)
+
+fishes.push(fish)
+
+})
+
+}
+
+
+// 🪼 jellyfish
+for(let i=0;i<6;i++){
+
+loader.load('assets/jellyfish.glb', function(gltf){
+
+const jelly = gltf.scene
+
+jelly.scale.set(2,2,2)
+
+jelly.position.set(
+Math.random()*60-30,
+Math.random()*20-10,
+Math.random()*-40
+)
+
+scene.add(jelly)
+
+jellys.push(jelly)
+
+})
+
+}
 
 camera.position.setZ(30)
 
@@ -106,9 +171,34 @@ function animate(){
 
 requestAnimationFrame(animate)
 
-// whale rotation
-whale.rotation.x +=0.002
-whale.rotation.y +=0.003
+// whale swim
+if(whale){
+whale.position.x += 0.05
+
+if(whale.position.x > 40){
+whale.position.x = -40
+}
+}
+
+
+// fish swim
+fishes.forEach(fish=>{
+
+fish.position.x += 0.1
+
+if(fish.position.x > 40){
+fish.position.x = -40
+}
+
+})
+
+
+// jellyfish floating
+jellys.forEach(jelly=>{
+
+jelly.position.y += Math.sin(Date.now()*0.002)*0.05
+
+})
 
 
 // bubbles rising
