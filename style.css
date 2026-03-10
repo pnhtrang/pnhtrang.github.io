@@ -295,3 +295,17 @@ box-shadow:0 0 8px rgba(255,255,255,0.7);
 color:white;
 font-weight:600;
 }
+
+.projects .project{
+display:flex;
+gap:20px;
+align-items:center;
+margin-bottom:40px;
+}
+
+.projects .project img{
+width:220px;
+height:auto;
+border-radius:12px;
+object-fit:cover;
+}
