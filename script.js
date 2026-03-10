@@ -135,13 +135,12 @@ requestAnimationFrame(animate)
 // whale swim
 if(whale){
 
-const t = Date.now() * 0.0003
+whale.position.x += 0.02
+whale.position.y = Math.sin(whale.position.x * 0.3) * 2
 
-whale.position.x = Math.sin(t) * 30
-whale.position.z = Math.cos(t) * 20
-whale.position.y = Math.sin(t*2) * 5
-
-whale.rotation.y = -t
+if(whale.position.x > 80){
+scene.remove(whale)
+}
 
 }
 
