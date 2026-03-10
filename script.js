@@ -138,10 +138,6 @@ if(whale){
 whale.position.x += 0.02
 whale.position.y = Math.sin(whale.position.x * 0.3) * 2
 
-if(whale.position.x > 80){
-scene.remove(whale)
-}
-
 }
 
 
