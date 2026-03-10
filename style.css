@@ -5,7 +5,8 @@ font-family:Segoe UI;
 color:white;
 background:#0b3c6d;
 overflow-x:hidden;
-
+padding-top:80px;
+  
 }
 
 canvas{
@@ -144,4 +145,39 @@ display: flex;
 gap: 20px;
 align-items: center;
 margin-bottom: 40px;
+}
+
+/* NAVBAR */
+
+.navbar{
+position: fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#5c3a2e;
+z-index:10;
+}
+
+.logo{
+color:white;
+font-size:28px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:40px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-weight:600;
+letter-spacing:1px;
 }
