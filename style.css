@@ -199,6 +199,7 @@ letter-spacing:1px;
 text-align:center;
 font-size:38px;
 margin-bottom:60px;
+color:#FFE8CF;
 }
 
 .education-grid{
@@ -253,7 +254,7 @@ font-size:20px;
 
 .content p{
 margin:3px 0;
-color:#666;
+color:white;
 }
 
 /* skills */
@@ -275,6 +276,7 @@ list-style:none;
 
 .skills li{
 background:#e4e9f7;
+color:#20405E;   /* màu xanh giống background */
 padding:8px 14px;
 border-radius:8px;
 font-size:14px;
